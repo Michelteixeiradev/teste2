@@ -1,0 +1,33 @@
+<MyLayout> 
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+   
+
+    Label:
+        id: troca_label 
+        text: "Clique no primeiro botão"
+        font_size: 20
+        height: 20
+
+    Label:
+        id: troca_label2
+        text: "Clique no segundo botão"
+        font_size: 20
+        height: 20
+
+    Button:
+        size_hint_y: None
+        text: "Primeiro"
+        font_size: 20
+        height: 50
+        on_press: root.troca_texto()
+
+    Button:
+        size_hint_y: None
+        text: "Segundo"
+        height: 50
+        font_size: 20
+        on_press: root.troca_texto2()
+
+ 

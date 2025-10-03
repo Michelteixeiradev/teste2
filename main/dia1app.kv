@@ -1,0 +1,26 @@
+<TextInputDem>
+    orientation: 'vertical'
+    spacing: 20
+    padding: 10
+
+    Label:
+        text: 'Digite algo abaixo...'
+        font_size: "20sp"
+        size_hint_y: None
+        heigth: "40dp"
+    
+    TextInput:
+        id:entrada_texto
+        hint_text:"Digite aqui..."
+        multiline: False
+        on_text_validate: root.enviar_mensagem() 
+        size_hint_y: None
+        height: "50dp"
+
+    Button:
+        text: "Enviar"
+        on_press: root.enviar_mensagem()
+        size_hint_y: None
+        height: "50dp"
+        background_color: 0.3, 0.6, 0.9, 1
+
